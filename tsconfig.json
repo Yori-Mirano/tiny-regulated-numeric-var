@@ -1,7 +1,6 @@
 {
-  "files": [
-    "src/tiny-regulated-numeric-var.ts"
-  ],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test.ts"],
   "compilerOptions": {
     "target": "es2015",
     "module": "es2015",
