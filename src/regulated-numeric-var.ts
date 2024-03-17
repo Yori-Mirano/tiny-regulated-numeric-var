@@ -43,12 +43,4 @@ export class RegulatedNumericVar {
     }
   }
 
-  isUndefined() {
-    return typeof this._value === 'undefined';
-  }
-
-  isDefined() {
-    return typeof this._value !== 'undefined';
-  }
-
 }

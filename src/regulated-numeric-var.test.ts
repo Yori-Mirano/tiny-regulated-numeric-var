@@ -38,8 +38,7 @@ describe('RegulatedNumericVar', () => {
     const regulatedVar = new RegulatedNumericVar(1);
 
     // THEN
-    expect(regulatedVar.isUndefined()).toBe(true);
-    expect(regulatedVar.isDefined()).toBe(false);
+    expect(regulatedVar.value).toBeUndefined();
   });
 
 
@@ -48,8 +47,7 @@ describe('RegulatedNumericVar', () => {
     const regulatedVar = new RegulatedNumericVar(1, 42);
 
     // THEN
-    expect(regulatedVar.isUndefined()).toBe(false);
-    expect(regulatedVar.isDefined()).toBe(true);
+    expect(regulatedVar.value).toBeDefined();
   });
 
 
